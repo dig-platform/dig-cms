@@ -28,7 +28,6 @@ describe('Dig/Decorators', () => {
 
   it('should get the input decorators for all the inputs in a component', () => {
     const inputs = digComponent(component);
-    console.log(inputs);
     expect(inputs?.length).toEqual(2);
     if (inputs) {
       expect(inputs[0].input).toEqual('text');
